@@ -1,7 +1,4 @@
 """
-Program not entirely finished.
-Any feedback gladly welcomed.
-
 This program will show scores and or print stars based on the score number.
 """
 
