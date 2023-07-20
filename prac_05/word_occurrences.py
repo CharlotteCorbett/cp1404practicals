@@ -1,7 +1,7 @@
 """
 Word Occurrences
 Estimate: 25 minutes
-Actual:   60 minutes
+Actual:   62 minutes
 """
 word_to_frequency = {}
 sentence = input("Text: ")
@@ -16,4 +16,4 @@ for word in words:
 
 
 for word in word_to_frequency:
-    print(f"{word}: {word_to_frequency[word]}")
+    print(f"{word:11}: {word_to_frequency[word]}")
