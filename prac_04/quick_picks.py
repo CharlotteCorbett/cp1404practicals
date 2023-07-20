@@ -19,6 +19,7 @@ def generate_quick_picks(number_of_quick_picks, MINIMUM_PICK, MAXIMUM_PICK, quic
                 picks.append(new_random_pick)
             else:
                 picks.append(random_pick)
+        picks.sort()
         quick_picks.append(picks)
     return  quick_picks
 
