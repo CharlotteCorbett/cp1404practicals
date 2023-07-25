@@ -29,7 +29,7 @@ def extract_name_from_email(email):
     name_email_segment = email.split("@")
     if '.' in name_email_segment[0]:
         name_segments = name_email_segment[0].split('.')
-        name_segment = f"{name_segments[0].title()} {name_segments[1].title()}"
+        name_segment = " ".join(name_segments).title()
         is_name = input(f"Is your name {name_segment}? (Y/n) ").lower()
     else:
         name_segment = name_email_segment[0]
