@@ -23,17 +23,29 @@ for champion in wimbledon_stats:
 
 """
 def main():
-    wimbledon_stats = load_files()
+    FILE = "wimbledon.csv"
+    results = load_files(FILE)
+    process_results()
+    display_results()
 
 
-def load_files():
-    infile = "wimbledon.csv"
-    wimbledon_stats = []
-    with open(infile, "r", encoding="utf-8-sig") as in_file:
+def load_files(FILE):
+    results = []
+    with open(FILE, "r", encoding="utf-8-sig") as in_file:
         for line in in_file:
             stats = line.strip().split(',')
-            wimbledon_stats.append(stats)
-        del wimbledon_stats[0]
-    return wimbledon_stats
+            results.append(stats)
+        del results[0]
+    return results
+
+
+def process_results():
+    countries = set()
+
+    pass
+
+
+def display_results():
+    pass
 
 main()
