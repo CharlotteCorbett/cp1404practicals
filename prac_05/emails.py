@@ -1,4 +1,4 @@
-
+"""This program with process names from emails"""
 
 
 def main():
